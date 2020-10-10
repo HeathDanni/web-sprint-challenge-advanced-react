@@ -30,13 +30,22 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+    You can use this.state to set and change state in class components.
+
 2. Describe the different phases of the component lifecycle.
 
+    The three phases in component lifecycle are mounting, updating, and unmounting.  Mounting is like the birth of the component when it is originally rendered, updating is like the life, and unmounting can be thought of as when the component dies.
+
 3. Demonstrate an understanding of class component lifecycle methods.
+    componentDidMount is a lifecycle method that can be used to change state right after the component mounts, componentDidUpdate is a method we can use to do something when a component updates, and componentWillUnmount is a method that we can use to execute something when a component is unmounting.
 
 4. Define stateful logic.
 
+    Stateful logic is a way we can change the data used by a component in a controlled way.
+
 5. Describe how to test a React component with React Testing Library.
+
+    To test a component you must select elements to test and then use methods to have the library do something with them.  For instance, you can use the library to select a text field, input something into it, and then select the submit button and click it.  You will then want to check to make sure that a desired event happened afterword to check wherethere the component is working properly.  It is important to check edge cases to make sure that the component will work properly in any instance.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -108,7 +117,7 @@ _Note: You built a useForm hook in the guided project this week. You will probab
 #### Testing the Checkout Form
 
 - [X] Build out the tests listed in `CheckoutForm.test.js`. You will need to make sure they are testing what the test title implies they are testing
-- [ ] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working
+- [X] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working
 
 <hr/>
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
@@ -135,6 +144,6 @@ test("displays plants in cart", () => {
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete after receiving your pull-request
